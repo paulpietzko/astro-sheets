@@ -6,11 +6,11 @@ import node from '@astrojs/node';
 
 import tailwind from '@astrojs/tailwind';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
-  adapter: node({
-    mode: 'standalone'
-  }),
+  adapter: vercel(),
 
   integrations: [tailwind()]
 });
